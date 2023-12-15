@@ -1,0 +1,27 @@
+
+
+void fun(){
+
+	print("in fun");
+}
+
+int gun(){
+	
+	Future.delayed(Duration(seconds: 5),()=>print("delayed"));	
+	print("in gun");
+	return 0;
+}
+
+void main() async{
+
+	print("start main");
+	
+//	Future.delayed(Duration(seconds: 5),()=>print("delayed"));
+	
+	int x = await gun();
+	
+	print(x);
+	
+
+
+}
