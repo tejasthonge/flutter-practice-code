@@ -12,7 +12,7 @@ void main(){
 	//call to the create method of class file
 
 	f1.create();
-	print(f1.existSync)
+	print("created file chek");
 	
 	
 
