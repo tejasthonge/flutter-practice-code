@@ -1,0 +1,10 @@
+
+git Command :
+
+git config --global user.name <"user name">
+
+git config --global user.email <"email id">
+
+git config --list
+
+git clone <reporsitry https > 
