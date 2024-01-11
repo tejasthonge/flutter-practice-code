@@ -11,12 +11,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:Scaffold(
+      //it must for android
+      home: Scaffold(
+        //all over screen  and ome is porpertes of meterialapp
         appBar: AppBar(
-          title: const Text("Core2Web"),
+          //appbar is properte of scaffold class
+          title: const Text("Core2Web"), //properte of app bar
         ),
         body: const Center(
-          child: Text("Core2We"),
+          //body is properte of scaffold class
+          child: Text("Core2We"), //  child prorerties
         ),
       ),
     );
