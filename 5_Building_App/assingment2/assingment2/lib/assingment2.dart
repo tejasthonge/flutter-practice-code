@@ -6,6 +6,7 @@ class Assingment2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.limeAccent,
@@ -22,13 +23,15 @@ class Assingment2 extends StatelessWidget {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         ),
         body: SizedBox(
+          
           //IT HAS THE PARAMETHOR IT IS H. W. CHILD THEM WE CAN ADD
-          height: double
-              .infinity, //IT CONCLUDE ALL THE REAMAIN SCREEN EXEPT THE APPBAR
+          height:BorderSide.strokeAlignOutside, //IT CONCLUDE ALL THE REAMAIN SCREEN EXEPT THE APPBAR
           child: Column(
+            
+            // mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               SizedBox(
-                height: 500,
+                height: 370,
                 child: Container(
                   color: Colors.deepPurpleAccent,
                   child: Container(
@@ -61,7 +64,6 @@ class Assingment2 extends StatelessWidget {
               
 
               SizedBox(
-              
                 height: 200,
                 child:Container(
                   
