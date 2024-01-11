@@ -6,10 +6,11 @@ class Assingment3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(  //
       appBar: AppBar(
-        title:Text("Assingmet3") ,
-        backgroundColor: Colors.blue,
+        
+        title:const Text("Assingmet3" ) ,
+        backgroundColor: Color.fromARGB(255, 239, 197, 11),
       ),
       body: SizedBox(
         height: double.infinity,
@@ -29,7 +30,7 @@ class Assingment3 extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: (){},
-                  child:Text("Button 1 ")
+                  child:const Text("Button 1 ")
                   )
               ],
             ),
@@ -46,7 +47,7 @@ class Assingment3 extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: (){},
-                  child:Text("Button 2 ")
+                  child:const Text("Button 2 ")
                   )
               ],
             ),
@@ -63,7 +64,7 @@ class Assingment3 extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: (){},
-                  child:Text("Button 3 ")
+                  child:const Text("Button 3 ")
                   )
               ],
             )
