@@ -1,4 +1,3 @@
-
 void runApp(StatelessWidgets app) {
   // app.build(Last());
   app.build(Last());
@@ -7,8 +6,6 @@ void runApp(StatelessWidgets app) {
 abstract class Widgets {
   final String key;
   const Widgets(this.key);
- 
-
 }
 
 /*
@@ -19,9 +16,7 @@ A stateless widget is a widget that describes part of the user interface by buil
 
 //
 
-class BuildContext {
-
-}
+class BuildContext {}
 
 class Last extends BuildContext {
   Last() {
@@ -80,6 +75,8 @@ class MaterialApp extends Widgets {
 
   @override
   Widgets build(BuildContext context) {
+    Object add = this.hashCode;
+    print("     in (build) of [materialApp] $add");
     return MaterialApp("this is marteraila key @3221",
         title: "amar", thems: const Thems("this is thems key"));
   }
@@ -130,9 +127,8 @@ ScrollBehavior? scrollBehavior,
 
 abstract class StatelessWidgets extends Widgets {
   const StatelessWidgets({required Key? key}) : super("this is key 242@321");
-   Widgets build(BuildContext context);
+  Widgets build(BuildContext context);
 
- 
   /*
   build abstract method
 @protected
