@@ -46,7 +46,7 @@ class Layout1 extends StatelessWidget {
                            Text("Hi i am flutter app deveoper",style:TextStyle(fontSize: 15),),
                         ],
                       ),
-                    ),
+                    ), 
                   ],
                 ),
               ),
