@@ -26,6 +26,10 @@ class _Assignment4State extends State<Assignment4> {
     }
   }
 
+  void fun() {
+    count = 0;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,16 +62,19 @@ class _Assignment4State extends State<Assignment4> {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
+                  children: [ 
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        fun();
+                         setState(() {});
+                      },
+                     
                       child: const Text("Chek Strong"),
                     ),
                     const SizedBox(
                       height: 20,
                     ),
                     Text("$count Numbers are stronge ")
-                    
                   ],
                 ),
               ])),
