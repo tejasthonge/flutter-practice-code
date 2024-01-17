@@ -10,6 +10,7 @@ class Assigment5 extends StatefulWidget {
 class _Assinment5State extends State<Assigment5> {
   bool _isPost1Liked = false;
   bool _isPost2Liked = false;
+  bool _isBookmark = false;
 
   @override
   Widget build(BuildContext context) {
@@ -26,27 +27,126 @@ class _Assinment5State extends State<Assigment5> {
         ),
         actions: const [
           Icon(
-            Icons.hdr_plus_rounded,
+            size: 33,
+            Icons.favorite_border_outlined,
             color: Colors.black,
-            
           ),
           Icon(
-           Icons.chat,
-           color: Colors.black,
+            size: 33,
+            Icons.chat_bubble_outline_rounded,
+            color: Colors.black,
           ),
-
         ],
       ),
       body: ListView(
         //it is by defoalt scrollable
         children: [
           //it has childeren but sinlgechild scroleveis has only child
+
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.all(7),
+                  // padding: const EdgeInsets.all(10),
+                  height: 80,
+                  width: 80,
+                  decoration: const BoxDecoration(
+                      color: Colors.blue,
+                      shape: BoxShape.circle,
+                      border: Border.fromBorderSide(BorderSide(
+                        style: BorderStyle.solid,
+                        color: Colors.black,
+                      ))),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(7),
+                  // padding: const EdgeInsets.all(10),
+                  height: 80,
+                  width: 80,
+                  decoration: const BoxDecoration(
+                      color: Colors.blue,
+                      shape: BoxShape.circle,
+                      border: Border.fromBorderSide(BorderSide(
+                        style: BorderStyle.solid,
+                        color: Colors.black,
+                      ))),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(7),
+                  // padding: const EdgeInsets.all(10),
+                  height: 80,
+                  width: 80,
+                  decoration: const BoxDecoration(
+                      color: Colors.blue,
+                      shape: BoxShape.circle,
+                      border: Border.fromBorderSide(BorderSide(
+                        style: BorderStyle.solid,
+                        color: Colors.black,
+                      ))),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(7),
+                  // padding: const EdgeInsets.all(10),
+                  height: 80,
+                  width: 80,
+                  decoration: const BoxDecoration(
+                      color: Colors.blue,
+                      shape: BoxShape.circle,
+                      border: Border.fromBorderSide(BorderSide(
+                        style: BorderStyle.solid,
+                        color: Colors.black,
+                      ))),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(7),
+                  // padding: const EdgeInsets.all(10),
+                  height: 80,
+                  width: 80,
+                  decoration: const BoxDecoration(
+                      color: Colors.blue,
+                      shape: BoxShape.circle,
+                      border: Border.fromBorderSide(BorderSide(
+                        style: BorderStyle.solid,
+                        color: Colors.black,
+                      ))),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(7),
+                  // padding: const EdgeInsets.all(10),
+                  height: 80,
+                  width: 80,
+                  decoration: const BoxDecoration(
+                      color: Colors.blue,
+                      shape: BoxShape.circle,
+                      border: Border.fromBorderSide(BorderSide(
+                        style: BorderStyle.solid,
+                        color: Colors.black,
+                      ))),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(7),
+                  // padding: const EdgeInsets.all(10),
+                  height: 80,
+                  width: 80,
+                  decoration: const BoxDecoration(
+                      color: Colors.blue,
+                      shape: BoxShape.circle,
+                      border: Border.fromBorderSide(BorderSide(
+                        style: BorderStyle.solid,
+                        color: Colors.black,
+                      ))),
+                ),
+              ],
+            ),
+          ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                color: const Color.fromARGB(255, 192, 192, 192),
+                // color: const Color.fromARGB(255, 192, 192, 192),
                 padding: const EdgeInsets.all(10),
                 child: Image.network(
                   "https://wallpapers.com/images/high/shree-ram-hanuman-digital-art-4i7v9duakaomeru5.webp",
@@ -57,19 +157,18 @@ class _Assinment5State extends State<Assigment5> {
               Row(
                 children: [
                   IconButton(
-                      onPressed: () {
-                        setState(() {
-                          _isPost1Liked = !_isPost1Liked;
-                        });
-                      },
-                      icon: _isPost1Liked
-                          ? const Icon(
-                              Icons.favorite_rounded,
-                              color: Colors.red,
-                            )
-                          : const Icon(
-                              Icons.favorite_border_outlined,
-                            )),
+                    onPressed: () {
+                      setState(() {
+                        _isPost1Liked = !_isPost1Liked;
+                      });
+                    },
+                    icon: _isPost1Liked
+                        ? const Icon(
+                            Icons.favorite_rounded,
+                            color: Colors.red,
+                          )
+                        : const Icon(Icons.favorite_border),
+                  ),
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(
@@ -84,10 +183,22 @@ class _Assinment5State extends State<Assigment5> {
                   ),
                   const Spacer(),
                   IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.bookmark_outline,
-                      )),
+                      onPressed: () {
+                        setState(() {
+                          _isBookmark = !_isBookmark;
+                        });
+                      },
+                      icon:_isBookmark
+                      ?const Icon(
+                        Icons.bookmark_outlined
+
+                      )
+                      :const Icon(
+                        Icons.bookmark_border_rounded
+                      )
+                       
+                      ),
+                      
                 ],
               ),
             ],
@@ -97,7 +208,7 @@ class _Assinment5State extends State<Assigment5> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                color: const Color.fromARGB(255, 192, 192, 192),
+                // color: const Color.fromARGB(255, 192, 192, 192),
                 padding: const EdgeInsets.all(10),
                 child: Image.network(
                   "https://wallpapers.com/images/high/shree-ram-hanuman-digital-art-4i7v9duakaomeru5.webp",
@@ -110,19 +221,17 @@ class _Assinment5State extends State<Assigment5> {
                   IconButton(
                     onPressed: () {
                       setState(() {
-                        _isPost2Liked  == !_isPost2Liked ;
+                        _isPost2Liked == !_isPost2Liked;
                       });
                     },
-
-                    icon:_isPost2Liked  
-                    ? const Icon(
-                      Icons.favorite_rounded,
-                      color: Colors.red,
-                    )
-                    :const Icon(
-                      Icons.favorite_border_outlined,
-                    ),
-
+                    icon: _isPost2Liked
+                        ? const Icon(
+                            Icons.favorite_rounded,
+                            color: Colors.red,
+                          )
+                        : const Icon(
+                            Icons.favorite_border_outlined,
+                          ),
                   ),
                   IconButton(
                     onPressed: () {},
