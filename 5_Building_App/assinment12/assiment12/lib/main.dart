@@ -2,6 +2,7 @@ import 'package:assiment12/screen3.dart';
 import 'package:assiment12/screen4.dart';
 import 'package:assiment12/screen5.dart';
 import 'package:assiment12/screen6.dart';
+import 'package:assiment12/screen7.dart';
 import 'package:flutter/material.dart';
 
 import 'appbarapp1.dart';
@@ -21,7 +22,7 @@ class AppbarApp extends StatelessWidget {
       // home: Screen3(),
       // home: Screen4(),
       // home: Screen5(),
-      home: Screen6(),
+      home: Screen7(),
     );
   }
 }
