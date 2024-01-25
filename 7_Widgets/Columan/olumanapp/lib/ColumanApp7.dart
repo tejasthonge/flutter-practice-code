@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class ColumanApp2 extends StatelessWidget {
-  const ColumanApp2({super.key});
+class ColumanApp7 extends StatelessWidget {
+  const ColumanApp7({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Container(
         width: double.infinity,
         height: double.infinity,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
           Container(
@@ -30,7 +30,6 @@ class ColumanApp2 extends StatelessWidget {
           ),
         ]),
       ),
-      
     );
   }
 }

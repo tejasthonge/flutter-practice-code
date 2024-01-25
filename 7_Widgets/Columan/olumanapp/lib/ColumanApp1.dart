@@ -5,16 +5,11 @@ class ColumanApp1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
-      home:  Scaffold(
-      
+    return Scaffold(
       body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        child: Column(
-          
-          children: [
+        // width: double.infinity,
+        // height: double.infinity,
+        child: Column(children: [
           Container(
             width: 100,
             color: Colors.red,
@@ -30,14 +25,8 @@ class ColumanApp1 extends StatelessWidget {
             color: Colors.red,
             height: 100,
           ),
-        ]
-        
+        ]),
       ),
-      ),
-      
-    ),
     );
   }
-
-  }
-
+}

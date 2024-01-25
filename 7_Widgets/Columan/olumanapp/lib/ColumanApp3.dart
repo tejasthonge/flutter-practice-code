@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
-class ColumanApp1 extends StatelessWidget {
-  const ColumanApp1({super.key});
+class ColumanApp3 extends StatelessWidget {
+  const ColumanApp3({super.key});
 
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
       body: Container(
-
-        child: Column(children: [
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
           Container(
             width: 100,
             color: Colors.red,
@@ -17,12 +20,12 @@ class ColumanApp1 extends StatelessWidget {
           ),
           Container(
             width: 100,
-            color: Colors.red,
+            color: Colors.green,
             height: 100,
           ),
           Container(
             width: 100,
-            color: Colors.red,
+            color: Colors.blue,
             height: 100,
           ),
         ]),
