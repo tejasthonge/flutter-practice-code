@@ -262,14 +262,13 @@ class _QuizAppState extends State<QuizApp> {
 
                 print(qIndex);
                 print(qObj.questiosOptionList.length);
-              }
-              else if (qIndex == qObj.questiosOptionList.length-1 ) {
+              } else if (qIndex == qObj.questiosOptionList.length - 1) {
                 isQueitionScreen = false;
                 print(isQueitionScreen);
 
                 print("ram ram");
               }
-              
+
               b1Flag = -1;
               b2Flag = -1;
               b3Flag = -1;

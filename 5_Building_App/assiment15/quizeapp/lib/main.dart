@@ -13,8 +13,9 @@ class QuizeApp extends StatelessWidget {
   Widget build(BuildContext context ) {
 
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
 
-      home: Quize1(),
+      home: Quize(),
     );
   }
 }
